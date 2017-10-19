@@ -65,7 +65,7 @@ var KEY = {
   };
 
 function isNil(value) {
-  return angular.isUndefined(value) || value === null;
+  return angular.isUndefined(value) || value === null || !Object.keys(value).length;
 }
 
 /**
